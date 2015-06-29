@@ -47,6 +47,7 @@ typedef enum {
     PID_CONTROLLER_HARAKIRI,
 } pidControllerType_e;
 
+// This magical 2, is that the same as PID_CONTROLLER_LUX_FLOAT? Shouldn't it refer to that enum value instead?
 #define IS_PID_CONTROLLER_FP_BASED(pidController) (pidController == 2)
 
 typedef struct pidProfile_s {
